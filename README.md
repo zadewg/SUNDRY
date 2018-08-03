@@ -1,4 +1,4 @@
 # various
 Little, hackerish, useful scripts.
 
-ALL PROGRAMS LICENSED UNDER THE MIT LICENSE
+ALL CODE LICENSED UNDER THE MIT LICENSE
