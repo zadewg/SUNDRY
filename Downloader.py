@@ -12,7 +12,7 @@ sheet = client.open("SPREADSHEET").sheet1
 
 data = str(sheet.get_all_records())
 
-#data = ["https://www.youtube.com/watch?v=0qDdYlyLRoI&feature=youtu.be", "00:10-00:20", "https://www.youtube.com/watch?v=-BQJo3vK8O8", "01:00-02:00"]
+#data = ["https://www.youtube.com/watch?v=9lwkMQOjzo0", "00:10-00:20", "https://www.youtube.com/watch?v=8Pa9x9fZBtY", "01:00-02:00"]
 
 links = []
 urlpattern = r"(https?\://(www)?.?y[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(/[^<'\";]*)?)"
@@ -55,8 +55,10 @@ for sample in samples:
 	end_time = "00:" + end_times[int(counter)]
 
 	bashCommand = ('avconv -i {} -ss {} -t {} -codec copy {}').format(audio_file, start_time, end_time, out_file)
-	process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
-	output, error = process.communicate()
+	#process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
+	#output, error = process.communicate()
+	
+	#LAST TWO LINES COMMENTED OUT TO CUMPLY WITH YOUTUBE'S POLICY.
 
 	counter += 1
 	
