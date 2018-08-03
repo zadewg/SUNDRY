@@ -1,6 +1,5 @@
 import time
 from datetime import timedelta
-
 #print repr(time) #watch out for this
 
 print(("\n{}MUF - Mobile Unicode Fuzzer\n{}By Zadew!\n{}\n").format((" "*10),(" "*19),("="*47)))
